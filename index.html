@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>首页</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 手机轮播滑动依赖 -->
+    <script src="https://cdn.bootcss.com/hammer.js/2.0.8/hammer.js"></script>
+    <script src="https://cdn.bootcss.com/hammer-time/1.1.0/hammer-time.js"></script>
+    <!-- 图片放大依赖 -->
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+              <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+              <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]-->
+            
+    
+</head>
+<body>
+    <!-- 京东大盒子开始 -->
+    <div class="jd_layout">
+        <!-- 顶部fix的搜索框开始 -->
+        <div class="jd_header"> 
+            <div class="jd_header_box">
+                <!-- 搜索框左侧的图标 -->
+                <a href="" class="icon_logo">
+                    
+                </a>
+                <!--搜索框 -->
+                <form class="header-class" action="#">
+                    <span class="icon_search">
+                    </span>
+                    <input type="search" placeholder="提示: 未完待续... ...">
+                    <!-- 这里的input type 标签必须设置成search。这样在手机端点击的时候才会将手机键盘调出来。 -->
+                </form>
+                <a href="" class="login">登录</a>
+            </div>
+        </div> 
+        <!-- 顶部fix的搜索框结束 -->
+        <!-- <div class="jd_banner">
+            <ul>
+                <li>
+                    <img src="img/l1.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l2.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l3.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l4.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l5.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l6.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l7.jpg" alt="" />
+                </li>
+                <li>
+                    <img src="img/l8.jpg" alt="" />
+                </li>
+            </ul>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div> -->
+                    <div class="carouselBox">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                            <!-- Indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+                    
+                            </ol>
+                    
+                            <!-- Wrapper for slides -->
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="img/l1.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l2.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l3.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l4.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l5.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l6.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l7.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <img src="img/l8.jpg" alt="...">
+                                    <div class="carousel-caption">
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+
+
+        <!-- nav开始 -->
+        <nav class="jd_nav">
+                <ul class="jd_nav_ul">
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav0.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav1.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                       
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav2.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav3.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav4.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav5.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav6.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="../JDDemo/img/nav7.png" alt="">
+                            <p>
+                                xxxx
+                            </p>
+                        </a>
+                        
+                    </li>
+                </ul>
+
+        </nav>
+        <!-- nav结束 -->
+
+
+        <!-- product开始 -->
+        <main class="jd_product">
+            <!-- 秒杀开始 -->
+            <section class="jd_product_box">
+                <div class="product_top seckilltop">
+                    <!-- product_top左边的大盒子开始 -->
+                    <div class="product_box_leftbox">
+                        <!-- 包含一个时钟图片，一段文字，还有一个倒计时 -->
+                        <span class="icon_clock">
+
+                        </span>
+                        <h4 class="seckillname">XXXX
+                        </h4>
+                        <!-- <div class="seckilltime">
+                            <span class="num">0</span>
+                            <span class="num">0</span>
+                            <span class="str">:</span>
+                            <span class="num">0</span>
+                            <span class="num">0</span>
+                            <span class="str">:</span>
+                            <span class="num">0</span>
+                            <span class="num">0</span>
+                        </div> -->
+
+                        <div class="daojishi">
+                                <span class="num">0</span>
+                                <span class="num">0</span>
+                                <span class="maohao">:</span>
+                                <span class="num">0</span>
+                                <span class="num">0</span>
+                                <span class="maohao">:</span>
+                                <span class="num">0</span>
+                                <span class="num">0</span>
+                        </div>
+                    </div>
+                    <div class="product_box_rightbox">
+                        <a>更多></a>
+                    </div>    
+                </div>
+                <div class="product_bot">
+                    <ul class="clearfix">
+                        <li>
+                            <a href="">
+                                <div class="imgbox">
+                                    <img src="../JDDemo/img/detail02.jpg" alt="">
+                                </div>
+                                <div class="new_price">￥&nbsp;7999</div>
+                                <div class="old_price">￥&nbsp;8999</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="imgbox">
+                                    <img src="../JDDemo/img/detail02.jpg" alt="">
+                                </div>
+                                <div class="new_price">￥&nbsp;7999</div>
+                                <div class="old_price">￥&nbsp;8999</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <div class="imgbox">
+                                    <img src="../JDDemo/img/detail02.jpg" alt="">
+                                </div>
+                                <div class="new_price">￥&nbsp;7999</div>
+                                <div class="old_price">￥&nbsp;8999</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="jd_product_box jd_chaozhi">
+                <div class="product_top">
+                <h3>XXX</h3>
+                </div>
+                <div class="product_bot clearfix">
+                <a class="product_bot_bigimg product_bot_img" href="">
+                    <img src="img/cp1.jpg" alt="">
+                </a>
+                <a class="product_bot_topimg product_bot_img_floatright" href="">
+                    <img src="img/cp2.jpg" alt="">
+                </a>
+                <a class="product_bot_img_floatright" href="">
+                    <img src="img/cp3.jpg" alt="">
+                </a>
+                </div>
+            </section>
+
+
+            <section class="jd_product_box jd_rmhd">
+                <div class="product_top">
+                <h3>XXX</h3>
+                </div>
+                <div class="product_bot clearfix">
+                <a class="product_bot_bigimgright product_bot_img" href="">
+                    <img src="img/cp4.jpg" alt="">
+                </a>
+                <a class="product_bot_topimg product_bot_img_floatleft" href="">
+                    <img src="img/cp5.jpg" alt="">
+                </a>
+                <a class="product_bot_img_floatleft" href="">
+                    <img src="img/cp6.jpg" alt="">
+                </a>
+                </div>
+            </section>
+
+
+        </main>
+
+    </div>
+    <!-- 京东大盒子结束 -->
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+<script src="js/main.js"></script>
+<!-- 轮播图script开始 -->
+<script>
+    $('.carousel').carousel({
+        interval: 2000
+
+    })      
+ 
+</script>
+

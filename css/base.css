@@ -1,0 +1,54 @@
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    /* 清除点击默认的高亮效果 */
+    -webkit-box-sizing: border-box;
+    /* 以包含border为width计算*/
+}
+
+body{
+    font-size: 14px;
+    font-family: "Microsoft YaHei",sans-serif;
+    color: black;
+    background-color: #f5f5f5;
+}
+a{
+    text-decoration:none;
+    color: black;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
+input,textarea{
+    border: none;
+    resize: none; /* 不让自己伸缩 */
+    outline: none;/*点击后默认有个框（蓝色的环）*/
+
+    -webkit-appearance: none;
+    /*清除浏览器默认的样式*/
+
+}
+
+/* 在移动端一般是以a标签来代替button的 */
+
+/* 清除浮动 */
+.clearfix::before,
+.clearfix::after{
+    content: ".";
+    display: block;
+    height: 0;
+    line-height:0;
+    visibility:hidden;
+    clear: both;
+}
+
+/* icon_类的公共样式 */
+[class^="icon_"]{
+    background: url(../img/sprites.png) no-repeat;
+    background-size: 200px 200px;
+}

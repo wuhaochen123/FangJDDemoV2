@@ -1,0 +1,381 @@
+.jd_layout{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: relative; 
+    height: 1000px;
+    /* background-color: #fff; */
+}
+.jd_header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 99;
+    /* background-color: rgb(255, 36, 36); */
+}
+.jd_header .jd_header_box{
+    height: 40px;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    /* background-color: rgba(247, 23, 23, 0.7); */
+}
+ .jd_header .jd_header_box .icon_logo{
+    
+    /* background-color: rgb(0, 255, 255,0.5); */
+    background-position: 0px -109px;
+    width:56px;
+    height:21px;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+} 
+.jd_header_box form {
+    padding-left: 80px;
+    padding-right: 55px;
+    width: 100%;
+    height:40px; 
+}
+.jd_header .jd_header_box .header-class .icon_search{
+        background-position: -60px -109px;
+        width:20px;
+        height:20px;
+        display: block;
+        position: absolute;
+        top: 8px;
+        left: 88px;
+}
+.jd_header_box form input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin: 4px 0 0 0;
+    padding-left: 30px;
+
+}
+.jd_header .login{
+    width: 50px;
+    display: block;
+    line-height: 40px;
+    font-size: 15px;
+    color: aliceblue;
+    /* background-color: rgba(230, 139, 139,0.7); */
+    border-radius: 5px;
+
+    position: absolute;
+    top: -2px;
+    right: 0;
+
+}
+
+/*轮播图*/
+
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd_banner ul:first-child {
+    width: 800%;
+}
+
+.jd_banner ul:first-child li {
+    width: 12.5%;
+    float: left;
+}
+
+.jd_banner ul:first-child li img {
+    width: 100%;
+    display: block;
+}
+
+/*点*/
+
+.jd_banner ul:last-child {
+    width: 118px;
+    height: 6px;
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    bottom: 10px;
+}
+
+.jd_banner ul:last-child li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    margin-left: 10px;
+    float: left;
+}
+
+.jd_banner ul:last-child li:first-child {
+    margin-left: 0;
+}
+
+.jd_banner ul:last-child li.now {
+    background: #fff;
+}
+
+/* jd_nav开始 */
+.jd_nav{
+    background-color: #fff;
+    padding: 0 3.125%;/* 控制左右 */ 
+    padding-top: 11px; /* 覆盖上边的上 */
+    height: 150px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+.jd_nav .jd_nav_ul li{
+    float: left;
+    width:25%;
+    text-align: center;
+    height: 69px;
+    
+}
+.jd_nav .jd_nav_ul li img {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+.jd_nav .jd_nav_ul li a{
+    display: block;
+    margin: 0 auto;
+   
+}
+.jd_nav .jd_nav_ul li p {
+    margin-top: 6px;
+}
+
+/* product产品展示区开始 */
+.jd_product{
+    margin: 0 5px;
+    margin-top: 10px;
+}
+.jd_product_box{
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 0 1px 1px #e0e0e0;
+    margin-top: 8px;
+
+}
+.product_top{
+    width: 100%;
+    height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+}
+.product_bot {
+    width: 100%；
+}
+.product_top h3{
+    font-size: 15px;
+    color: #666666;
+    padding-left: 16px;
+    line-height: 32px;
+    font-weight: inherit;
+}
+.product_top h3::before {
+    position: absolute;
+    content:"";
+    display: block;
+
+    width: 3px;
+    height: 12px;
+    background-color: red;
+    left: 8px;
+    top:10px;   
+}
+.product_box_leftbox .icon_clock {
+    background: url(../img/seckill-icon.png)no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    display: block;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+
+}
+
+.seckillname{
+    font-size: 15px;
+    color: #d8505c;
+    font-weight: inherit;
+    float: left;
+    margin-left: 8px;
+    margin-top: 6px;
+}
+
+.seckilltime .num {
+    display: block;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    background: #333;
+    color: #fff;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+.seckilltime{
+    float: left;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+   .seckilltime .str {
+    display: block;
+    width: 4px;
+    height: 15px;
+    text-align: center;
+    float: left;
+    line-height: 15px;
+    margin-left: 3px;
+}
+.product_box_rightbox{
+    float: right;
+
+}
+.product_box_rightbox a {
+        line-height: 32px;
+        margin-right: 10px;
+}
+
+/*daojishi倒计时diy */
+.daojishi{
+    height: 32px;
+    margin-left: 10px;
+    width: auto;
+    float: left;
+    
+}
+.daojishi .num{
+    display: block;
+    float: left;
+    height: 20px;
+    width: 20px;
+    background-color: #333;
+    text-align: center;
+    color: #fff;
+    margin: 6px 1px;
+}
+.daojishi .maohao {
+    display: block;
+    float: left;
+    height: 32px;
+    width: 4px;
+    line-height: 32px;
+    text-align: center;
+    /* background-color: rgb(252, 0, 0); */
+}
+/* .product_bot {
+    width: 100%;
+}
+
+.product_bot li {
+    width: 33%;
+}
+*/
+
+.product_bot li a {
+    display: block;
+} 
+
+.product_bot li a img {
+    width: 70%;
+}
+
+.product_bot li a .imgbox{
+       border-right: 1px solid #cac6c6;  
+}
+
+.product_bot li:last-child a .imgbox {
+    border-right:none;
+}
+
+.product_bot li {
+    width: 33.3333333333%;
+    float: left;
+}
+.product_bot li .new_price {
+    text-align: center;
+    line-height: 15px;
+    color: red;
+    padding-right: 8px;
+    font-size: 14px;
+}
+.product_bot li .old_price {
+    text-decoration: line-through;
+    color: silver;
+    padding-right: 8px;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+.seckilltop {
+    border-bottom:none;
+}
+
+/* 超值、热门活动购模块 */
+
+.product_bot{
+    width: 100%;
+}
+.product_bot_img{
+    display: block;
+    width: 50%;
+}
+.product_bot_topimg{
+    border-bottom: 1px solid #e0e0e0;
+}
+.product_bot_img_floatright {
+    width: 50%;
+    float: right;
+}
+.product_bot_img_floatleft {
+    width: 50%;
+    float: left;
+}
+.product_bot_bigimg {
+    float: left;
+    border-right :1px solid #e0e0e0;
+}
+.product_bot_bigimgright {
+    float: right;
+    border-left: 1px solid #e0e0e0;
+}
+.jd_chaozhi img,
+.jd_rmhd img{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carouselBox{
+ width: 100%;
+}
+.carouselBox .carousel-inner img{
+    display: block;
+    width: 100%;
+}
+
+/* nav 旋转特效css */
+.jd_nav img {
+    animate-duration: 1s; 
+    /* //动画持续时间 */
+    animate-delay: 1s; 
+    /* //动画延迟时间 */
+    animate-iteration-count: 1; 
+    /* //动画执行次数 */
+}
+a:hover {
+    text-decoration: none;
+}

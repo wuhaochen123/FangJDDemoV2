@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://cdn.bootcss.com/animate.css/3.5.2/animate.css" rel="stylesheet">
+</head>
+<body>
+    <div class="" id="box001"></div>
+    <style>
+    div{
+        width: 200px;
+        height: 300px;
+        background-color: slategrey;
+    }
+    </style>
+</body>
+</html>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>
+    $('#box001').mouseenter(function() {
+        console.log('mouseenter');
+        $('#box001').addClass('animated rubberBand')
+    });
+        $('#box001').mouseleave(function () {
+                console.log('mouseleave');
+                $('#box001').removeClass();
+            });
+
+    // $('#yourElement').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', doSomething);.
+    $(function () {
+            $('#jq22').addClass('animated bounce');
+        });
+</script>
